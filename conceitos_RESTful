@@ -1,0 +1,31 @@
+//AS REGRAS DO PADRÃO REST SÃO DIVIDIDAS EM 4 CATEGORIAS:
+1- ENPOINTS: ENDPOINTS SÃO LOCALIZAÇÕES DIGITAIS EXPOSTAS PELA API PARA SER CONSUMIDA PELO FRONT-END, 
+Cada endpoint é uma URL (Uniform Resource Locator) que fornece a localização de um recurso no servidor da API. EX.: HTTPS://DOMINIO.COM.BR/FUNCAO/PARAMETRO
+
+2- VERBOS HTTP:  é autoexplicativo kk
+Verbo	     URL	                            Finalidade
+GET	       https://api.com.br/produtos/2	  Obter um produto
+GET        https://api.com.br/produtos/	    Obter todos os produtos
+POST	     https://api.com.br/produtos/	    Cadastrar um produto
+PUT	       https://api.com.br/produtos/2	  Atualizar todos os dados de um produto
+PATCH	     https://api.com.br/produtos/2	  Atualizar alguns dados de um produto
+DELETE	   https://api.com.br/produtos/2	  Excluir um produto
+
+3- JSON: é um formato de dados que carrega as informações do front-end pro back-end e vice e versa
+sintaxe onde chave é o identificador do valor e valor é o valor:
+{
+"chave" : valor
+}
+exemlo prático
+{
+"idade" : 30
+}
+
+4- CÓDIGO DE STATUS: são os códigos de status que servem para verificar em que pé está a requisição, se foi concluida com sucesso ou não
+RESPOSTAS DE INFORMAÇÃO:
+100 AO 199 - RESPOSTAS DE INFORMAÇÃO - A API INFORMA AO FRONT-END QUE A SOLICITAÇÃO ESTÁ EM ANDAMENTO
+200 AO 299 - RESPOSTAS DE SUCESSO - A SOLICITAÇÃO FOI BEM SUCEDIDA, A SOLICITAÇÃO FEITA PELO FRONT-END É RECEBIDA E EXECUTADA CORRETAMENTE
+300 A0 399 - REDIRECIONAMENTO - SOLICITAÇÃO RECEBIDA, PARA SER PROCESSADA É NECESSÁRIO MAIS ALGUMA AÇÃO DO FRONT-END
+400 AO 499 - ERRO DO CLIENTE - HÁ UM ERRO VINDO DO FRONT-END, A API RECEBE A SOLICITAÇÃO PORÉM NÃO PODE EXECUTÁ-LA
+500 AO 599 - ERRO DO SERVIDOR - ERRO NO BACK-END, A SOLICITAÇÃO VINDO DO FRONT-END NÃO PODE SER EXECUTADA
+  
