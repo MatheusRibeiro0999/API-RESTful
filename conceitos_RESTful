@@ -4,12 +4,12 @@ Cada endpoint é uma URL (Uniform Resource Locator) que fornece a localização 
 
 2- VERBOS HTTP:  é autoexplicativo kk
 Verbo	     URL	                            Finalidade
-GET	       https://api.com.br/produtos/2	  Obter um produto
-GET        https://api.com.br/produtos/	    Obter todos os produtos
-POST	     https://api.com.br/produtos/	    Cadastrar um produto
-PUT	       https://api.com.br/produtos/2	  Atualizar todos os dados de um produto
+GET	       https://api.com.br/produtos/2	  retorna um dado
+GET        https://api.com.br/produtos/	    retorna todos os dados
+POST	     https://api.com.br/produtos/	    insere dados
+PUT	       https://api.com.br/produtos/2	  Atualiza dados
 PATCH	     https://api.com.br/produtos/2	  Atualizar alguns dados de um produto
-DELETE	   https://api.com.br/produtos/2	  Excluir um produto
+DELETE	   https://api.com.br/produtos/2	  Exclui dados
 
 3- JSON: é um formato de dados que carrega as informações do front-end pro back-end e vice e versa
 sintaxe onde chave é o identificador do valor e valor é o valor:
